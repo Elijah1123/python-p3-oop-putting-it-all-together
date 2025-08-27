@@ -29,3 +29,18 @@ class Shoe:
     def cobble(self):
         self.condition = "New"
         print("Your shoe is as good as new!")  # ✅ print, not return
+
+
+if __name__ == "__main__":
+
+    my_shoe = Shoe("Nike", 42)
+
+    print("Brand:", my_shoe.brand)
+    print("Size:", my_shoe.size)
+    print("Condition:", my_shoe.condition)
+
+    my_shoe.cobble()
+
+    print("Condition after cobbling:", my_shoe.condition)
+
+    my_shoe.size = "forty-two"
